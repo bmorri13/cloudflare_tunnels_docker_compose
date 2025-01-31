@@ -25,7 +25,7 @@ docker compose up -d
 
 ### Check Tunnel Status
 ```bash
-docker logs cloudflare-tunnel
+docker logs cloudflared-tunnel
 ```
 
 ### Access Your Application:
@@ -41,7 +41,7 @@ docker compose down
 - Check tunnel logs: docker logs cloudflare-tunnel
 - Ensure your domain DNS is properly configured in Cloudflare
 
-## Additional Links
+## Links
 - [Cloudflare Tunnels Example](https://tech.aufomm.com/how-to-use-cloudflare-tunnel-to-expose-multiple-local-services/)
 - [Cloudflare Tunnels Documentation](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/)
 - [Docker Compose Documentation](https://docs.docker.com/compose/)
