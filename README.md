@@ -38,7 +38,6 @@ docker compose down
 
 ## Troubleshooting
 - Verify your tunnel token is correct in .env
-- Check tunnel logs: docker logs cloudflare-tunnel
 - Ensure your domain DNS is properly configured in Cloudflare
 
 ## Links
