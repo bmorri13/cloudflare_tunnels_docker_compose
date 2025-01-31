@@ -1,0 +1,24 @@
+# Exclude source control files
+.git
+.gitignore
+
+# Node dependencies (if you install dependencies inside the container)
+node_modules
+
+# Local environment files and configuration
+.env
+.env.local
+
+# Build output directories (if you generate build artifacts locally)
+dist
+build
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Editor and OS-specific files
+.DS_Store
+.idea
+.vscode

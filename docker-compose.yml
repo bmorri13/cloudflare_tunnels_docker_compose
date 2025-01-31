@@ -1,0 +1,22 @@
+
+services:
+  tunnel:
+    container_name: cloudflared-tunnel
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      - TUNNEL_TOKEN=${CF_TOKEN}
+    networks:
+      - tunnel
+
+  alexprinter2:
+    container_name: alexprinter2
+    image: bmo75/alex-printer-build-counter:latest
+    restart: unless-stopped
+    networks:
+      - tunnel
+
+networks:
+  tunnel:
+    name: tunnel2
