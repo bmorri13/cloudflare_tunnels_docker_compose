@@ -19,4 +19,4 @@ services:
 
 networks:
   tunnel:
-    name: tunnel2
+    name: tunnel
